@@ -458,67 +458,161 @@ p {
 
 /* Responsivo */
 @media (max-width: 1200px) {
-    .team-member {
+    #team-section .team-member {
         flex: 1 1 calc(25% - 20px);
         max-width: calc(25% - 20px);
     }
 }
 
 @media (max-width: 992px) {
-    .team-member {
+    #team-section .team-member {
         flex: 1 1 calc(33.333% - 20px);
         max-width: calc(33.333% - 20px);
     }
 
-    .overlay h3 {
+    #team-section .overlay h3 {
         font-size: 1.1em;
     }
 
-    .overlay .role {
+    #team-section .overlay .role {
         font-size: 0.9em;
     }
 }
 
 @media (max-width: 768px) {
-    .team-member {
+    #team-section .team-member {
         flex: 1 1 calc(50% - 20px);
         max-width: calc(50% - 20px);
     }
 
-    .overlay h3 {
+    #team-section .overlay h3 {
         font-size: 1em;
     }
 
-    .overlay .role {
+    #team-section .overlay .role {
         font-size: 0.85em;
     }
 }
 
 @media (max-width: 576px) {
-    .team-member {
+    #team-section .team-member {
         flex: 1 1 100%;
         max-width: 100%;
     }
 
-    .overlay h3 {
+    #team-section .overlay h3 {
         font-size: 0.9em;
     }
 
-    .overlay .role {
+    #team-section .overlay .role {
         font-size: 0.8em;
     }
 }
 
 @media (max-width: 400px) {
-    .overlay h3 {
+    #team-section .overlay h3 {
         font-size: 0.8em;
     }
 
-    .overlay .role {
+    #team-section .overlay .role {
         font-size: 0.7em;
     }
 
     #team-section h2 {
         font-size: 2em;
+    }
+}
+
+
+/*Contact Us Section*/
+.container {
+    flex: 1;
+}
+
+/* Contact Us Section */
+.contact-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact-us img {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form h1 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form .input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #228B22;
+}
+
+@media (min-width: 640px) {
+    .contact-form h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .contact-form h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-form button {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    .contact-form h1 {
+        font-size: 3rem;
+    }
+
+    .contact-form button {
+        font-size: 1.5rem;
     }
 }
