@@ -140,13 +140,12 @@
 /* Agregar la fuente Changa a toda la sección de información */
 .info-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas para pantallas grandes */
-    grid-template-rows: 0.3fr 0.3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; /* Ajustar la altura de las filas automáticamente */
     gap: 15px;
-    padding: 40px;
+    padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
-    height: 100vh;
     font-family: 'Changa', sans-serif;
 }
 
@@ -191,7 +190,7 @@
     transform: translateY(-10px);
 }
 
-.overlay {
+.info-section .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -268,7 +267,8 @@ p {
 
 
 #plan-section {
-    padding: 20px;
+    padding: 10px 20px; /* Ajusta el padding aquí */
+
     background-color: white;
     font-family: 'Changa', sans-serif;
 }
@@ -379,4 +379,146 @@ p {
         width: 100%;
     }
 }
+#team-section {
+    padding: 50px 0;
+    text-align: center;
+}
 
+#team-section .container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#team-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Changa', sans-serif;
+}
+
+#team-section .team-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#team-section .team-member {
+    flex: 1 1 calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Asegura que el overlay no se desborde */
+}
+
+#team-section .image-person {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#team-section .team-member img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+#team-section .team-member:hover img {
+    transform: scale(1.1);
+}
+
+#team-section .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+#team-section .team-member:hover .overlay {
+    transform: translateY(0);
+}
+
+#team-section .overlay h3 {
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+#team-section .overlay .role {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+    .team-member {
+        flex: 1 1 calc(25% - 20px);
+        max-width: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .team-member {
+        flex: 1 1 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+    }
+
+    .overlay h3 {
+        font-size: 1.1em;
+    }
+
+    .overlay .role {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .overlay h3 {
+        font-size: 1em;
+    }
+
+    .overlay .role {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 576px) {
+    .team-member {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .overlay h3 {
+        font-size: 0.9em;
+    }
+
+    .overlay .role {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 400px) {
+    .overlay h3 {
+        font-size: 0.8em;
+    }
+
+    .overlay .role {
+        font-size: 0.7em;
+    }
+
+    #team-section h2 {
+        font-size: 2em;
+    }
+}
