@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenCare</title>
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
+    </style>
 </head>
 <body>
     <header class="header">
@@ -26,7 +29,7 @@
 </body>
 
 <body>
-    <section class="info-section">
+    <section class ="info-section">
                 <!-- Cuadro vertical grande (derecha) -->
         <div class="info-box large-vertical" style="background-image: url('img/img-1-main.jpg');">
             <div class="overlay"></div>
@@ -34,9 +37,7 @@
                 <h2>MAIN IDEA</h2>
                 <p>Agricorp is a startup focused on helping individuals with limited plant care knowledge manage their home gardens. They aim to provide an innovative web application that assists users in organizing and caring for their plants by offering reminders and plant management tools.</p>
             </div>
-        </div> 
-
-    
+        </div>
         <!-- Cuadro superior (centro) -->
         <div class="info-box small-horizontal" style="background-image: url('img/img-2-mission.jpg');">
             <div class="overlay"></div>
@@ -65,6 +66,163 @@
             </div>
         </div>
     </section>
-       
+    <section id="plan-section">
+        <h2>PLANS</h2>
+        <div class="plan-container">
+            <div class="plan">
+                <h3>FREE</h3>
+                <p class="description">Ideal for beginners with access to low maintenance plants.</p>
+                <p class="price">$0</p>
+                <ul>
+                    <li>Access to 20 easy-to-grow plant species.</li>
+                    <li>Manual setting of watering time and schedule.</li>
+                    <li>Ability to create and save up to 3 custom plants.</li>
+                </ul>
+                <button>GET STARTED</button>
+            </div>
+            <div class="plan">
+                <h3>PREMIUM</h3>
+                <p class="description">Ideal for beginners with access to low maintenance plants.</p>
+                <p class="price">$10</p>
+                <ul>
+                    <li>Access to 20 easy-to-grow plant species.</li>
+                    <li>Manual setting of watering time and schedule.</li>
+                    <li>Ability to create and save up to 3 custom plants.</li>
+                </ul>
+                <button>GET STARTED</button>
+            </div>
+        </div>
+    </section>
+    <section id="team-section">
+        <div class="container">
+            <h2>TEAM</h2>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="image-person">
+                        <img src="img/jose.png" alt="José Diego Huamani Sánchez">
+                        <div class="overlay">
+                            <h3>José Diego Huamani Sánchez</h3>
+                            <p class="role">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="image-person">
+                        <img src="img/luis.png" alt="Luis Eduardo Lagos Aguilar">
+                        <div class="overlay">
+                            <h3>Luis Eduardo Lagos Aguilar</h3>
+                            <p class="role">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="image-person">
+                        <img src="img/alexis.png" alt="Manuel Alexis Vargas Quispe">
+                        <div class="overlay">
+                            <h3>Manuel Alexis Vargas Quispe</h3>
+                            <p class="role">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="image-person">
+                        <img src="img/Raul_Chap1 1.png" alt="Raúl Ronaldo Quispe Erasmo">
+                        <div class="overlay">
+                            <h3>Raúl Ronaldo Quispe Erasmo</h3>
+                            <p class="role">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="image-person">
+                        <img src="img/juan.png" alt="Juan Paul Llamccaya Arone">
+                        <div class="overlay">
+                            <h3>Juan Paul Llamccaya Arone</h3>
+                            <p class="role">Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimail-container">
+        <h1 class="testimail-title">TESTIMONIALS</h1>
+            <div class="testimail-box" style="background-image: url('../src/img/background.jpg');">
+            <div class="overlay"></div>
+            <button class="prev" onclick="cambiarTestimonial(-1)">&#10229;</button>
+            <div class="contenttestimonials">
+                <img id="profile-picture" src="../src/img/client1.png" alt="Foto de perfil" class="testimail-profile-picture">
+                <div class="testimail-data-letters">
+                    <p id="testimonial-text" class="testimail-data-letters1">“The ease with which I can grow and care for my favorite plants is incredible. The Free plan helped me get started, and now, with the Premium plan, I’m experimenting with more challenging species. It’s an essential tool for any plant lover!” Premium, estoy experimentando con especies más desafiantes. ¡Es una herramienta esencial para cualquier amante de las plantas!</p>
+                    <h4 id="testimonial-name" class="testimail-data-letters2">Valeria Benitez</h4>
+                    <h5 id="testimonial-role" class="testimail-data-letters3">Regular Customer</h5>
+                </div>
+            </div>
+            <button class="next" onclick="cambiarTestimonial(1)">&#10230;</button>
+        </div> 
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    
+    </section>
+    <div class="gallery-COMPLETE">
+        <h1>GALLERY</h1>
+        <div class="gallery">
+            <img src="img/gallery1.png" alt="Photo 1">
+            <img src="img/gallery2.png" alt="Photo 2">
+            <img src="img/gallery3.png" alt="Photo 3">
+            <img src="img/gallery4.png" alt="Photo 4">
+            <img src="img/gallery5.png" alt="Photo 5">
+            <img src="img/gallery6.png" alt="Photo 6">
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="contact-us">
+            <img src="./img/plant-hands.png" alt="Hands holding a plant">
+            <div class="contact-form">
+                <h1>CONTACT US</h1>
+                <form action="#">
+                    <div class="input-group">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" placeholder="E-mail" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h2>Join our email newsletter for news and tips.</h2>
+                <p><strong>Phone:</strong> +51 999-999-999</p>
+                <p><strong>Hours:</strong> Mon-Sat: 07:00 AM - 05:00 PM</p>
+                <p><strong>Location:</strong> Prolongación Primavera 2390, Santiago de Surco, 15023</p>
+            </div>
+            <div class="footer-column">
+                <h2>Newsletter</h2>
+                <button class="newsletter-btn">Terms of Service</button>
+            </div>
+            <div class="footer-column footer-section">
+                <h2>Follow us</h2>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Instagram</a></p>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2024 GreenCare - All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>      
 </body>
 </html>
