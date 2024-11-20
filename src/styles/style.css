@@ -9,7 +9,17 @@
     font-family: "Inria Sans", sans-serif; /* Tipo de letra */
     font-size: 18px; /* Tamaño de letra general */
 }
+.about-product {
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado alrededor */
+}
 
+.video-container {
+    display: flex;
+    justify-content: center; /* Centra el video en el contenedor */
+    align-items: center; /* Alinea el video verticalmente */
+    margin-top: 20px; /* Espacio por encima del video */
+}
 .header {
     background-color: white;
     border-top: 20px solid rgba(20, 75, 0, 1);
